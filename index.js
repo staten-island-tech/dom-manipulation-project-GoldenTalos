@@ -16,9 +16,11 @@ DOMSelectors.button.addEventListener("click", function () {
 });
 
 function changeLi() {
+  let pointIndex = 1;
   DOMSelectors.points.forEach((point) => {
     point.addEventListener("click", function () {
-      point.textContent("hello");
+      point.textContent = `Hello I am point ${pointIndex}`;
+      pointIndex++;
     });
   });
 }
