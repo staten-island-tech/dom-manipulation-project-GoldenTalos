@@ -6,8 +6,8 @@ DOMSelectors = {
     objects: document.getElementById("objects"),
 }
 DOMSelectors.submit.addEventListener('click', function() {
-    p = DOMSelectors.name.value;
-    h2 = DOMSelectors.description.value;
+    h2 = DOMSelectors.name.value;
+    p = DOMSelectors.description.value;
     image = DOMSelectors.image.value;
     DOMSelectors.objects.insertAdjacentHTML(
         "afterbegin",
@@ -19,6 +19,7 @@ DOMSelectors.submit.addEventListener('click', function() {
                 <button class="remove-button" onclick="this.parentElement.remove()">Remove</button>
         </div>`
     )
+    
     DOMSelectors.name.value = '';
     DOMSelectors.description.value = '';
     DOMSelectors.image.value = '';
