@@ -1,27 +1,25 @@
-const DOMSelectors = {
-  button: document.getElementById("btn"),
-  text: document.querySelector("#text"),
-  box: document.getElementById("big-black-box"),
-  points: document.querySelectorAll(".point"),
-};
-
-function backgroundAndText(background, text) {
-  background.style.backgroundColor = "red";
-  text.textContent = "This is now a big bigger red box";
-  text.style.fontSize = "40px";
+DOMSelectors = {
+    enter: document.getElementById("enter"),
+    name: document.getElementById("name"),
+    description: document.getElementById("description"),
+    image: document.getElementById("image"),
+    objects: document.getElementById("objects"),
 }
-
-DOMSelectors.button.addEventListener("click", function () {
-  backgroundAndText(DOMSelectors.box, DOMSelectors.text);
+DOMSelectors.submit.addEventListener('click', function() {
+    p = DOMSelectors.name.value;
+    h2 = DOMSelectors.description.value;
+    image = DOMSelectors.image.value;
+    DOMSelectors.objects.insertAdjacentHTML(
+        "afterbegin",
+        `<div class="object">
+                <h2>${h2}</h2>
+                <p>${p}</p>
+                <img class="object-image" src="${image}">
+                <br>
+                <button class="remove-button" onclick="this.parentElement.remove()">Remove</button>
+        </div>`
+    )
+    DOMSelectors.name.value = '';
+    DOMSelectors.description.value = '';
+    DOMSelectors.image.value = '';
 });
-
-function changeLi() {
-  let pointIndex = 1;
-  DOMSelectors.points.forEach((point) => {
-    point.addEventListener("click", function () {
-      point.textContent = `Hello I am point ${pointIndex}`;
-      pointIndex++;
-    });
-  });
-}
-changeLi();
