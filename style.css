@@ -1,32 +1,43 @@
 body {
-    margin-top: 300px;
-    margin-right: 660px;
-    background-color: #c98e57;
+    margin-right: 600px;
+    background-color: #cfaa8c;
+    font-family: 'Poor Story', cursive;
+    font-size: 30px;
 }
-.object {
-    margin: auto;
-    text-align: center;
-    background-color: rgb(166, 216, 233);
-    border: 2px black solid;
+.output {
+    margin-left: 250px;
+    background-color:  #a57a5e;
+    border: 15px solid #866855;
     border-radius: 10px;
-    width: 50%;
+    width: 400px;
     margin-bottom: 20px;
+    margin: 0 auto;
+    text-align: center;
 }
-.object-image {
-    width: 90%;
+.image-input {
+    width: 100%;
 }
 input { 
     margin-bottom: 10px;
 }
-#submit {
+#enter {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+    color: black;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    
+}
+.button {
+    margin-top: 10px;
+    margin-left: auto;
     margin-bottom: 20px;
 }
-.remove-button {
-    width: 20%;
-    height: 40px;
-    background-color: red;
-    margin-bottom: 20px;
-    color: white;
-    font-weight: 900;
-    font-size: 1rem;
+
+#enter.hover {
+    transform: skew(-10deg);
 }

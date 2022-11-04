@@ -17,7 +17,7 @@ DOMSelectors.enter.addEventListener("click", function () {
                 <p>${descript}</p>
                 <img class="ouput-image" src="${image}">
                 <br>
-                <button class="remove-button" onclick="this.parentElement.remove()">Remove</button>
+                <button class="button" onclick="this.parentElement.remove()">Remove</button>
         </div>`
   );
 
