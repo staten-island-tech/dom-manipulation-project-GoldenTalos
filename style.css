@@ -1,17 +1,17 @@
 body {
-    margin-right: 600px;
+    margin-right: 200px;
     background-color: #cfaa8c;
     font-family: 'Poor Story', cursive;
     font-size: 30px;
 }
 .output {
-    margin-left: 250px;
+    margin-right: 600px;
     background-color:  #a57a5e;
     border: 15px solid #866855;
     border-radius: 10px;
-    width: 400px;
-    margin-bottom: 20px;
-    margin: 0 auto;
+    width: 500px;
+    margin-bottom: 30px;
+    margin-top: 30px;
     text-align: center;
 }
 .image-input {
@@ -34,10 +34,17 @@ input {
 }
 .button {
     margin-top: 10px;
-    margin-left: auto;
     margin-bottom: 20px;
+    background-color: white;
+    color: black;
+    width: 80px;
+    height: 25px;
+    font-size: 15px;
+    font-weight: 900;
+    text-align: center;
 }
 
 #enter.hover {
-    transform: skew(-10deg);
+    color: rgb(158, 102, 76);
+  background-color: #d6b2979a;
 }

@@ -1,15 +1,15 @@
 DOMSelectors = {
   enter: document.getElementById("enter"),
-  descriptionInput: document.getElementById("description-input"),
-  nameInput: document.getElementById("name-input"),
-  imageInput: document.getElementById("image-input"),
+  description: document.getElementById("description"),
+  name: document.getElementById("name"),
+  image: document.getElementById("image"),
   output: document.getElementById("output"),
 };
 
 DOMSelectors.enter.addEventListener("click", function () {
-  descript = DOMSelectors.descriptionInput.value;
-  title = DOMSelectors.nameInput.value;
-  image = DOMSelectors.imageInput.value;
+  descript = DOMSelectors.description.value;
+  title = DOMSelectors.name.value;
+  image = DOMSelectors.image.value;
   DOMSelectors.output.insertAdjacentHTML(
     "afterbegin",
     `<div class="output">
@@ -21,7 +21,7 @@ DOMSelectors.enter.addEventListener("click", function () {
         </div>`
   );
 
-  DOMSelectors.descriptionInput.value = "";
-  DOMSelectors.nameInput.value = "";
-  DOMSelectors.imageInput.value = "";
+  DOMSelectors.description.value = "";
+  DOMSelectors.name.value = "";
+  DOMSelectors.image.value = "";
 });
