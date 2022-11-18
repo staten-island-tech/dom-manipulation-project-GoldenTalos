@@ -6,7 +6,12 @@ DOMSelectors = {
   output: document.getElementById("output"),
 };
 
-function resetInput(Input)
+function resetInput(input) {
+  input.forEach((element) => {
+    element.value = "";
+  });
+}
+
 DOMSelectors.enter.addEventListener("submit", function () {
   descript = DOMSelectors.description.value;
   title = DOMSelectors.name.value;
