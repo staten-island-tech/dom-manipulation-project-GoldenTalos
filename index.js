@@ -1,43 +1,34 @@
 DOMSelectors = {
   enter: document.getElementById("enter"),
+  form: document.getElementById("form"),
   description: document.getElementById("description"),
   name: document.getElementById("name"),
   image: document.getElementById("image"),
   output: document.getElementById("output"),
 };
 
-function resetInput(input) {
-  input.forEach((element) => {
-    element.value = "";
-  });
-}
+DOMSelectors.form.addEventListener("submit", (event) => {
+  enterFunction();
+  event.preventDefault();
+  console.log("hello");
+});
 
-DOMSelectors.enter.addEventListener("submit", function () {
+function enterFunction(event) {
   descript = DOMSelectors.description.value;
   title = DOMSelectors.name.value;
   image = DOMSelectors.image.value;
-  //make object from values
   DOMSelectors.output.insertAdjacentHTML(
     "afterbegin",
     `<div class="output">
-                <h2>${title}</h2>
-                <p>${descript}</p>
-                <img class="ouput-image" src="${image}">
+                <h2>${event.title}</h2>
+                <p>${event.descript}</p>
+                <img class="ouput-image" src="${event.image}">
                 <br>
-                <button class="button">Remove</button>
+                <button class="button" id="remove" onclick="this.parentElement.remove()">Remove</button>
         </div>`
   );
-
-  const buttons = Array.from(document.getElementsByClassName("remove-button"));
-  buttons.forEach((button) => {
-    button.addEventListener("click", function () {
-      this.parentElement.remove();
-    });
-  });
 
   DOMSelectors.description.value = "";
   DOMSelectors.name.value = "";
   DOMSelectors.image.value = "";
-  //queryall remove buttons
-  //addevent listeners to remove buttons with forEAch
-});
+}

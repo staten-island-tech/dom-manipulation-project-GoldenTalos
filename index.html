@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM Manipulation</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet"> 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <label for="name">Name: </label>
-    <input id="name">
+  <form id="form">
+    <label for="name">Name: <input id="name" type="text"></label>
     <br>
-    <label for="description">Description: </label>
-    <input id="description">
+    <label for="description">Description: <input id="description" type="text"></label>
     <br>
-    <label for="image">Image Url: </label>
-    <input id="image">
+    <label for="image">Image Url: <input id="image"> </label>
     <br>
-    <button id="enter">Enter</button>
+    <button id="enter" type="submit">Enter</button>
     <br>
-    <div id="output"></div>
+  </form>
+  <div id="output"></div>
 </body>
 <script src="index.js"></script>
+
 </html>
