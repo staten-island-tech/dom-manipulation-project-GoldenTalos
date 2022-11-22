@@ -8,12 +8,12 @@ DOMSelectors = {
 
 DOMSelectors.form.addEventListener("submit", function () {
   event.preventDefault();
-  addNewElement();
-  setRemoveButtons();
-  resetInputs();
+  element();
+  removebutton();
+  reset();
 });
 
-function enterFunction() {
+function element() {
   descript = DOMSelectors.description.value;
   title = DOMSelectors.name.value;
   image = DOMSelectors.image.value;
@@ -38,7 +38,7 @@ function removebutton() {
   });
 }
 
-function resetInputs() {
+function reset() {
   DOMSelectors.description.value = "";
   DOMSelectors.name.value = "";
   DOMSelectors.image.value = "";
