@@ -20,7 +20,7 @@ body {
 input { 
     margin-bottom: 10px;
 }
-#enter {
+#submit {
     margin-top: 10px;
     margin-bottom: 20px;
     background-color: white;
@@ -44,7 +44,7 @@ input {
     text-align: center;
 }
 
-#enter.hover {
+#submit.hover {
     color: rgb(158, 102, 76);
   background-color: #d6b2979a;
 }
