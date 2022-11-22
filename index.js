@@ -14,6 +14,8 @@ DOMSelectors.form.addEventListener("submit", (event) => {
 });
 
 function enterFunction(event) {
+  event.preventDefault();
+  console.log("hello");
   descript = DOMSelectors.description.value;
   title = DOMSelectors.name.value;
   image = DOMSelectors.image.value;
