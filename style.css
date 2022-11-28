@@ -14,8 +14,8 @@ body {
     margin-top: 30px;
     text-align: center;
 }
-.image-input {
-    width: 100%;
+.output-image {
+    width: 90%;
 }
 input { 
     margin-bottom: 10px;
@@ -44,7 +44,3 @@ input {
     text-align: center;
 }
 
-#submit.hover {
-    color: rgb(158, 102, 76);
-  background-color: #d6b2979a;
-}

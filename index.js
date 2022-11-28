@@ -8,14 +8,12 @@ DOMSelectors = {
 
 DOMSelectors.form.addEventListener("submit", function () {
   event.preventDefault();
-  element();
+  enterFunction();
   removebutton();
-  reset();
+  resetInputs();
 });
 
-function enterFunction(event) {
-  event.preventDefault();
-  console.log("hello");
+function enterFunction() {
   descript = DOMSelectors.description.value;
   title = DOMSelectors.name.value;
   image = DOMSelectors.image.value;
@@ -24,7 +22,7 @@ function enterFunction(event) {
     `<div class="output">
                 <h2>${title}</h2>
                 <p>${descript}</p>
-                <img class="ouput-image" src="${image}">
+                <img class="output-image" src="${image}">
                 <br>
                 <button class="button">Remove</button>
         </div>`
@@ -40,7 +38,7 @@ function removebutton() {
   });
 }
 
-function reset() {
+function resetInputs() {
   DOMSelectors.description.value = "";
   DOMSelectors.name.value = "";
   DOMSelectors.image.value = "";
